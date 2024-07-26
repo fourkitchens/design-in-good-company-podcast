@@ -37,21 +37,21 @@ function EpisodeEntry({ episode }) {
         <div className="flex flex-col items-start">
           <h2
             id={`episode-${episode.id}-title`}
-            className="mt-2 text-lg font-bold text-slate-900"
+            className="mt-2 text-2xl font-bold text-kitchensKelly-700 hover:text-kitchensKelly-800 hover:underline"
           >
             <Link href={`/${episode.id}`}>{episode.title}</Link>
           </h2>
           <FormattedDate
             date={date}
-            className="order-first font-mono text-sm leading-7 text-slate-500"
+            className="order-first text-xs font-semibold uppercase leading-7 text-leafyGreen"
           />
-          <p className="mt-1 text-base leading-7 text-slate-700">
+          <p className="mt-1 text-base leading-7 text-leafyGreen">
             {episode.description}
           </p>
           <div className="mt-4 flex items-center gap-4">
             <EpisodePlayButton
               episode={episode}
-              className="flex items-center gap-x-3 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
+              className="flex items-center gap-x-3 text-base font-bold leading-6 text-kitchensKelly-600 hover:text-kitchensKelly-700 active:text-kitchensKelly-900"
               playing={
                 <>
                   <PauseIcon className="h-2.5 w-2.5 fill-current" />
@@ -67,13 +67,13 @@ function EpisodeEntry({ episode }) {
             />
             <span
               aria-hidden="true"
-              className="text-sm font-bold text-slate-400"
+              className="text-sm font-bold text-leafyGreen/40"
             >
               /
             </span>
             <Link
               href={`/${episode.id}`}
-              className="flex items-center text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
+              className="flex items-center text-sm font-semibold leading-6 text-leafyGreen"
               aria-label={`Show notes for episode ${episode.title}`}
             >
               Show notes
@@ -91,11 +91,11 @@ export default async function Home() {
   return (
     <div className="pb-12 pt-16 sm:pb-4 lg:pt-12">
       <Container>
-        <h1 className="text-2xl font-bold leading-7 text-slate-900">
+        <h1 className="text-2xl font-bold leading-7 text-leafyGreen">
           Episodes
         </h1>
       </Container>
-      <div className="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
+      <div className="divide-y divide-whippedCream-400 sm:mt-4 lg:mt-8 lg:border-t lg:border-whippedCream-100">
         {episodes.map((episode) => (
           <EpisodeEntry key={episode.id} episode={episode} />
         ))}

@@ -21,12 +21,20 @@ module.exports = {
 				},
         leafyGreen: { DEFAULT: '#0F2C15', dark: '#08200D', light: '#244E2C' },
         whippedCream: {
-          DEFAULT: '#F8F5EC',
-          dark: '#EEEADE',
-        },
+					100: "#FCFAF6",
+					200: "#F8F5EC",
+					300: "#F2ECDB",
+					400: "#EBE3CA",
+					500: "#E5D9B8",
+					600: "#DED0A6",
+					700: "#C9B26D",
+					800: "#AA8F3F",
+					900: "#715F2A",
+					1000: "#393015"
+				}
       },
       fontFamily: {
-        sans: ['Satoshi', ...defaultTheme.fontFamily.sans],
+        sans: ['mundial', ...defaultTheme.fontFamily.sans],
       },
       spacing: {
         18: '4.5rem',

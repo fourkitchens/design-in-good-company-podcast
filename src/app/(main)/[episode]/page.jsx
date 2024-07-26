@@ -38,7 +38,7 @@ export default async function Episode({ params }) {
           <div className="flex items-center gap-6">
             <EpisodePlayButton
               episode={episode}
-              className="group relative flex h-18 w-18 flex-shrink-0 items-center justify-center rounded-full bg-slate-700 hover:bg-slate-900 focus:outline-none focus:ring focus:ring-slate-700 focus:ring-offset-4"
+              className="group relative flex h-18 w-18 flex-shrink-0 items-center justify-center rounded-full bg-kitchensKelly-600 hover:bg-kitchensKelly-900 focus:outline-none focus:ring focus:ring-kitchensKelly-700 focus:ring-offset-4"
               playing={
                 <PauseIcon className="h-9 w-9 fill-white group-active:fill-white/80" />
               }
@@ -47,22 +47,22 @@ export default async function Episode({ params }) {
               }
             />
             <div className="flex flex-col">
-              <h1 className="mt-2 text-4xl font-bold text-slate-900">
+              <h1 className="mt-2 text-4xl font-bold text-leafyGreen">
                 {episode.title}
               </h1>
               <FormattedDate
                 date={date}
-                className="order-first font-mono text-sm leading-7 text-slate-500"
+                className="order-first text-sm leading-7 text-leafyGreen"
               />
             </div>
           </div>
-          <p className="ml-24 mt-3 text-lg font-medium leading-8 text-slate-700">
+          <p className="ml-24 mt-3 text-lg font-medium leading-8 text-leafyGreen">
             {episode.description}
           </p>
         </header>
-        <hr className="my-12 border-gray-200" />
+        <hr className="my-12 border-whippedCream-500" />
         <div
-          className="prose prose-slate mt-14 [&>h2:nth-of-type(3n)]:before:bg-violet-200 [&>h2:nth-of-type(3n+2)]:before:bg-indigo-200 [&>h2]:mt-12 [&>h2]:flex [&>h2]:items-center [&>h2]:font-mono [&>h2]:text-sm [&>h2]:font-medium [&>h2]:leading-7 [&>h2]:text-slate-900 [&>h2]:before:mr-3 [&>h2]:before:h-3 [&>h2]:before:w-1.5 [&>h2]:before:rounded-r-full [&>h2]:before:bg-cyan-200 [&>ul]:mt-6 [&>ul]:list-['\2013\20'] [&>ul]:pl-5"
+          className="prose prose-slate mt-14 [&>h2]:mt-12 [&>h2]:flex [&>h2]:items-center [&>h2]:text-sm [&>h2]:font-bold [&>h2]:leading-7 [&>h2]:text-leafyGreen [&>ul]:mt-6 [&>ul]:list-['\2013\20'] [&>ul]:pl-5"
           dangerouslySetInnerHTML={{ __html: episode.content }}
         />
       </Container>
