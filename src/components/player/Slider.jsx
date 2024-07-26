@@ -36,7 +36,7 @@ function Thumb(props) {
 
   return (
     <div
-      className="absolute top-1/2 -tranpink-x-1/2"
+      className="absolute top-1/2 -translate-x-1/2"
       style={{
         left: `${state.getThumbPercent(index) * 100}%`,
       }}
@@ -54,8 +54,8 @@ function Thumb(props) {
         className={clsx(
           'h-4 rounded-full',
           isFocusVisible || state.isThumbDragging(index)
-            ? 'w-1.5 bg-pink-900'
-            : 'w-1 bg-pink-700',
+            ? 'w-1.5 bg-kitchensKelly-900'
+            : 'w-1 bg-kitchensKelly-700',
         )}
       >
         <VisuallyHidden>
@@ -100,14 +100,14 @@ export function Slider(props) {
           props.onChangeStart?.()
         }}
         ref={trackRef}
-        className="relative w-full bg-pink-100 md:rounded-full"
+        className="relative w-full bg-kitchensKelly-100 md:rounded-full"
       >
         <div
           className={clsx(
             'h-2 md:rounded-l-xl md:rounded-r-md',
             isFocusVisible || state.isThumbDragging(0)
-              ? 'bg-pink-900'
-              : 'bg-pink-700',
+              ? 'bg-kitchensKelly-900'
+              : 'bg-kitchensKelly-700',
           )}
           style={{
             width:
@@ -137,18 +137,18 @@ export function Slider(props) {
             'hidden rounded-md px-1 py-0.5 font-mono text-sm leading-6 md:block',
             state.getThumbMaxValue(0) === 0 && 'opacity-0',
             isFocusVisible || state.isThumbDragging(0)
-              ? 'bg-pink-100 text-pink-900'
-              : 'text-pink-500',
+              ? 'bg-kitchensKelly-100 text-kitchensKelly-900'
+              : 'text-kitchensKelly-700',
           )}
         >
           {formatTime(currentTime, totalTime)}
         </output>
-        <span className="text-sm leading-6 text-pink-300" aria-hidden="true">
+        <span className="text-sm leading-6 text-kitchensKelly-300" aria-hidden="true">
           /
         </span>
         <span
           className={clsx(
-            'hidden rounded-md px-1 py-0.5 font-mono text-sm leading-6 text-pink-500 md:block',
+            'hidden rounded-md px-1 py-0.5 font-mono text-sm leading-6 text-kitchensKelly-700 md:block',
             state.getThumbMaxValue(0) === 0 && 'opacity-0',
           )}
         >

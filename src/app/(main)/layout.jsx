@@ -115,14 +115,14 @@ export default function MainLayout({ children }) {
               className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-leafyGreen sm:gap-8 lg:flex-col lg:gap-4"
             >
               {[
-                ['Spotify', SpotifyIcon],
-                ['Apple Podcast', ApplePodcastIcon],
-                ['Overcast', OvercastIcon],
-                ['RSS Feed', RSSIcon],
-              ].map(([label, Icon]) => (
+                ['Spotify', SpotifyIcon, 'https://open.spotify.com/show/5z9oaV1GOIe4PBDM3NhATK?si=lPT55lU_S9yQHjKjFxHS6A'],
+                ['Apple Podcast', ApplePodcastIcon, 'https://podcasts.apple.com/us/podcast/design-in-good-company/id1741974684'],
+                ['Overcast', OvercastIcon, 'https://overcast.fm/itunes1741974684'],
+                ['RSS Feed', RSSIcon, 'https://feeds.buzzsprout.com/2355315.rss'],
+              ].map(([label, Icon, url]) => (
                 <li key={label} className="flex">
                   <Link
-                    href="/"
+                    href={url}
                     className="group flex items-center"
                     aria-label={label}
                   >

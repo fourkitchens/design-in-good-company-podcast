@@ -7,7 +7,7 @@ export function PlayButton({ player }) {
   return (
     <button
       type="button"
-      className="group relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-pink-700 hover:bg-pink-900 focus:outline-none focus:ring-2 focus:ring-pink-700 focus:ring-offset-2 md:h-14 md:w-14"
+      className="group relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-kitchensKelly-700 hover:bg-kitchensKelly-900 focus:outline-none focus:ring-2 focus:ring-kitchensKelly-700 focus:ring-offset-2 md:h-14 md:w-14"
       onClick={() => player.toggle()}
       aria-label={player.playing ? 'Pause' : 'Play'}
     >
