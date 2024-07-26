@@ -7,10 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        kitchensKelly: {
+          DEFAULT: '#0EB747',
+          light: '#4AC975',
+          dark: '#0B9239',
+        },
+        leafyGreen: { DEFAULT: '#0F2C15', dark: '#08200D', light: '#244E2C' },
+        whippedCream: {
+          DEFAULT: '#F8F5EC',
+          dark: '#EEEADE',
+        },
       },
     },
   },
