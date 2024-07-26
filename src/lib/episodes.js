@@ -1,5 +1,5 @@
 import { parse as parseFeed } from 'rss-to-json'
-import { array, number, object, parse, string } from 'valibot'
+import { array, number, object, string } from 'valibot'
 
 export async function getAllEpisodes() {
   let FeedSchema = object({
@@ -20,13 +20,13 @@ export async function getAllEpisodes() {
     ),
   })
 
-  let feed = await parseFeed('https://their-side-feed.vercel.app/api/feed')
-  let items = parse(FeedSchema, feed).items
+  var feed = await parseFeed('https://feeds.buzzsprout.com/2355315.rss');
+  const items = feed.items;
 
   let episodes = items.map(
     ({ id, title, description, content, enclosures, published }) => ({
       id,
-      title: `${id}: ${title}`,
+      title,
       published: new Date(published),
       description,
       content,

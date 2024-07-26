@@ -56,9 +56,7 @@ export default async function Episode({ params }) {
               />
             </div>
           </div>
-          <p className="ml-24 mt-3 text-lg font-medium leading-8 text-leafyGreen">
-            {episode.description}
-          </p>
+          
         </header>
         <hr className="my-12 border-whippedCream-500" />
         <div
