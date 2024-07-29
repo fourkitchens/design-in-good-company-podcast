@@ -2,12 +2,12 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Their Side',
+    template: '%s - Design in Good Company',
     default:
-      'Their Side - Conversations with the most tragically misunderstood people of our time',
+      'Design in Good Company - Your go-to podcast for where creativity, community, and values converge.',
   },
   description:
-    'Conversations with the most tragically misunderstood people of our time.',
+    'Your go-to podcast for where creativity, community, and values converge. We‘re not just about making great designs, we‘re about making designs that do great things.',
 }
 
 export default function RootLayout({ children }) {

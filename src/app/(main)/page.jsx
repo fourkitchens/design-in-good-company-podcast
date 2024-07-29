@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { Container } from '@/components/Container'
 import { getAllEpisodes } from '@/lib/episodes'
 import { EpisodeEntry } from '@/components/EpisodeEntry'
