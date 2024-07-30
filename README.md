@@ -2,7 +2,7 @@
 
 # Design in Good Company
 
-<img src="./src/images/poster.png" style="width: 300px;" alt="Design in Good Company podcast art"/>
+<img src="./src/images/poster.png" style="width: 300px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px;" alt="Design in Good Company podcast art"/>
 
 Your go-to podcast for where creativity, community, and values converge. Here at Four Kitchens, we‘re not just about making great designs, we‘re about making designs that do great things.
 
