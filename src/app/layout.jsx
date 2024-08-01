@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import Fathom from '@/lib/Fathom';
 
 export const metadata = {
   title: {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex min-h-full">
         <div className="w-full">{children}</div>
+        <Fathom />
       </body>
     </html>
   )
