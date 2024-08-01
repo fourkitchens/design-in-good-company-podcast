@@ -12,3 +12,8 @@ Your go-to podcast for where creativity, community, and values converge. Here at
 * [RSS Feed](https://feeds.buzzsprout.com/2355315.rss)
 
 Built with ❤️ by Four Kitchens
+
+## Techinical details
+
+* Domain on Namecheap
+* Hosted on Netlify
