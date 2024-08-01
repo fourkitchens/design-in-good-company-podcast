@@ -17,4 +17,4 @@ Built with ❤️ by Four Kitchens
 
 * Domain on Namecheap
 * Hosted on Netlify
-* Changes to the RSS feed triggers a new build
+* Changes to the RSS feed triggers a new build via Zapier
